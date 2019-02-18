@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+
+#register {
+	margin-top: 5%;
+	display: flex;
+	justify-content: center;
+	background-color: gray;
+	flex-wrap: wrap;
+}
+
+
+form input {
+	flex-grow: 4;
+	font-size: 2rem;
+ }
+
+ form button {
+ 	flex-grow: 1;
+ 	font-size: 2rem;
+ }
+
+.submit-button {
+	
+}
+
