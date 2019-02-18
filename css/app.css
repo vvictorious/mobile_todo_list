@@ -1,9 +1,19 @@
 * {
 	box-sizing: border-box;
+	font-family: futura;
+	margin: 0;
+}
+
+.main-heading {
+	line-height: 200px;
+	text-align: center;
+	font-size: 3rem;
+	background-color: black;
+	color: white
 }
 
 #register {
-	margin-top: 5%;
+	margin: 5% 2%;
 	display: flex;
 	justify-content: center;
 	background-color: gray;
@@ -13,7 +23,7 @@
 
 form input {
 	flex-grow: 4;
-	font-size: 2rem;
+	font-size: 3rem;
  }
 
  form button {
@@ -21,7 +31,7 @@ form input {
  	font-size: 2rem;
  }
 
-.submit-button {
-	
-}
+
+
+
 
