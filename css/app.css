@@ -41,6 +41,7 @@ form input {
 	font-family: helvetica;
 	font-size: 2rem;
 	margin: 0 0 0 20px;
+	display: block;
 }
 
 .checkbox {
@@ -49,4 +50,15 @@ form input {
 	margin: 0 0 0 20px;
 }
 
+.button {
+	font-family: futura;
+	color: white;
+	background-color: black;
+	padding: .5rem;
+	font-size: 2rem;
+}
+
+.right {
+	margin-left: 10px;
+}
 

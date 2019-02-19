@@ -14,7 +14,22 @@ form.addEventListener('submit', (e) => {
 	const checkbox = document.createElement('input');
 	checkbox.type = 'checkbox';
 	checkbox.className = 'checkbox';
+	const editButton = document.createElement('button');
+	const removeButton = document.createElement('button');
+	removeButton.textContent = 'remove';
+	editButton.textContent = 'edit';
+	editButton.className = 'button';
+	removeButton.className = 'button right';
+	label.appendChild(checkbox);
 	li.appendChild(label);
-	li.appendChild(checkbox);
+	li.appendChild(editButton);
+	li.appendChild(removeButton);
 	ul.appendChild(li);
+});
+
+ul.addEventListener('click', (e) => {
+	const li = e.target.parentNode;
+	if(e.target.textContent === 'remove'){
+		ul.removeChild(li);
+	}
 });
