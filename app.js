@@ -11,7 +11,7 @@ form.addEventListener('submit', (e) => {
 	li.appendChild(span);
 	li.className = 'list-li';
 	const label = document.createElement('label');
-	label.textContent = 'finished this yet?';
+	label.textContent = 'complete?';
 	label.className = 'label';
 	const checkbox = document.createElement('input');
 	checkbox.type = 'checkbox';
@@ -32,11 +32,12 @@ form.addEventListener('submit', (e) => {
 ul.addEventListener('change', (e) => {
 	const checkbox = e.target;
 	const checked = checkbox.checked;
+	const label = checkbox.parentNode;
 	const lineItems = checkbox.parentNode.parentNode;
 	if(checked){
 		lineItems.className = 'finished';
 	} else {
-		lineItems.className = 'list-li';
+		lineItems.className = 'todo-list';
 	}
 });
 
@@ -64,6 +65,8 @@ ul.addEventListener('click', (e) => {
 		e.target.textContent = 'edit';
 	}
 });
+
+
 
 
 

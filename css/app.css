@@ -83,11 +83,22 @@ form input {
 	border-style: dotted;
 	margin: 1.4rem;
 	padding: 1.4rem;
+	background-color: 	#FFF5EE;
+	box-shadow: 10px 10px;
 }
 
 .finished label {
 	transition: 0.4s;
- 	 color: rgba(88, 183, 205, 1);
+}
+
+.todo-list li {
+	transition: 0.4s;
+ 	font-family: futura;
+	font-size: 3rem;
+	list-style-type: none;
+	border-style: solid;
+	margin: 1.4rem;
+	padding: 1.4rem;
 }
 
 
