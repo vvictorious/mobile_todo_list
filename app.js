@@ -29,6 +29,19 @@ form.addEventListener('submit', (e) => {
 	ul.appendChild(li);
 });
 
+ul.addEventListener('change', (e) => {
+	const checkbox = e.target;
+	const checked = checkbox.checked;
+	const lineItems = checkbox.parentNode.parentNode;
+	if(checked){
+		lineItems.className = 'finished';
+	} else {
+		lineItems.className = 'list-li';
+	}
+});
+
+
+
 ul.addEventListener('click', (e) => {
 	const li = e.target.parentNode;
 	if(e.target.textContent === 'remove'){
@@ -38,6 +51,7 @@ ul.addEventListener('click', (e) => {
 		const input = document.createElement('input');
 		input.type = 'text';
 		input.value = span.textContent;
+		input.className = 'input-edit';
 		li.insertBefore(input, span);
 		li.removeChild(span);
 		e.target.textContent = 'save';
@@ -50,3 +64,13 @@ ul.addEventListener('click', (e) => {
 		e.target.textContent = 'edit';
 	}
 });
+
+
+
+
+
+
+
+
+
+
