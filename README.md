@@ -1,2 +1,3 @@
-# mobile_todo_list
-Mobile to do list that looks pretty
+deployed app =======>  https://still-reef-89512.herokuapp.com/
+
+This is a todo list that I made with vanilla js. I took a mobile first approach to this project. I wanted to experiment with flexbox, and js on this project. This is a crud application that can do all of those functions successfully. Also, I added a checkbox that when toggled will show only the completed taks. From a functional perspective it works exactly as I envisioned, but I do get errors in the console when toggling that checkbox. Unfortunately, I did not figure out how to fix those errors from arising, but it operates as it should.
