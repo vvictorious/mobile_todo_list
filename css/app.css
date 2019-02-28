@@ -4,20 +4,35 @@
 	margin: 0;
 }
 
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 .main-heading {
 	line-height: 200px;
 	text-align: center;
 	font-size: 3rem;
 	background-color: black;
-	color: white
+	color: white;
 }
 
 #register {
 	margin: 5% 2%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	background-color: gray;
-	flex-wrap: wrap;
+}
+
+.list-li {
+	font-family: futura;
+	font-size: 3rem;
+	list-style-type: none;
+	border-style: solid;
+	margin: 1.4rem;
+	padding: 1.4rem;
+	transition: 0.4s;
 }
 
 
@@ -36,15 +51,7 @@ form input {
  	padding: 0;
  }
 
-.list-li {
-	font-family: futura;
-	font-size: 3rem;
-	list-style-type: none;
-	border-style: solid;
-	margin: 1.4rem;
-	padding: 1.4rem;
-	transition: 0.4s;
-}
+
 
 .label {
 	font-family: helvetica;
@@ -100,6 +107,21 @@ form input {
 	margin: 1.4rem;
 	padding: 1.4rem;
 }
+
+.main {
+	margin: 0 0 0 55%;
+}
+
+.filterLabel {
+	font-size: 2rem;
+}
+
+.filterCheckbox {
+	margin: 0 0 0 10px;
+	height: 25px;
+	width: 25px;
+}
+
 
 
 

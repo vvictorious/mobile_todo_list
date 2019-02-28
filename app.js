@@ -1,6 +1,40 @@
 const form = document.getElementById("register");
 const input = document.querySelector('input');
 const ul = document.querySelector('ul');
+const mainDiv = document.querySelector('.main');
+
+const div = document.createElement('div');
+const filterLabel = document.createElement('label');
+const filterCheckbox = document.createElement('input');
+
+filterLabel.className = 'filterLabel';
+filterCheckbox.className = 'filterCheckbox';
+filterLabel.textContent = 'See what has been completed?';
+filterCheckbox.type = 'checkbox';
+div.appendChild(filterLabel);
+div.appendChild(filterCheckbox);
+mainDiv.insertBefore(div, ul);
+
+filterCheckbox.addEventListener('change', (e) => {
+  const isChecked = e.target.checked;
+  const lis = ul.children;
+  
+  if (isChecked) {
+    for(let i = 0; i <= lis.length; i += 1){
+      if(lis[i].className === 'finished') {
+        lis[i].style.display = '';
+      } else {
+        lis[i].style.display = 'none';
+      }
+    }
+  } else {
+    for(let i = 0; i <= lis.length; i += 1) {
+      lis[i].style.display = '';
+    }
+  }
+});
+
+
 
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
