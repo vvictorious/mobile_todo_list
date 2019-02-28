@@ -39,6 +39,7 @@ filterCheckbox.addEventListener('change', (e) => {
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	const text = input.value;
+	input.value = '';
 	const li = document.createElement('li');
 	const span = document.createElement('span');
 	span.textContent = text;
